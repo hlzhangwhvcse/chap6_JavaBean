@@ -5,7 +5,8 @@
 	</head>
 	<body>
 		<center>
-			<form action="checkOut.jsp" method="post">
+			<!--  <form action="checkOut.jsp" method="post">  -->
+			<form action="ConServlet" method="post">
 				商品名称：
 				<input name="name" type="text" required="required" />
 				<br>
@@ -17,6 +18,8 @@
 				<br>
 			<input type="submit" name="Submit" value="提交" />
 			<input type="reset" name="Submit" value="重置">
+			<button onclick="window.location.href='checkMVC.jsp'">返回清单</button>
+			<input type="hidden" name="method" value="shop">
 			</form>
 		</center>
 	</body>
